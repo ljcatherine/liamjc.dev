@@ -223,3 +223,15 @@ a.badge:hover { border-color: var(--accent); }
   .parts { grid-template-columns: 1fr; }
   .top nav a:not(.gh) { display: none; }
 }
+
+/* fork link in the corner of a project card */
+.has-fork { position: relative; }
+.has-fork .card-head { padding-right: 40px; }
+.fork { position: absolute; top: 18px; right: 18px; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; border: 1px solid var(--line-hi); color: var(--muted); background: var(--bg); transition: color .25s, border-color .25s, transform .35s cubic-bezier(.2,.8,.2,1); }
+.fork svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; overflow: visible; }
+.fork circle { fill: var(--bg); }
+.fork:hover { color: var(--accent); border-color: var(--accent); transform: rotate(-8deg) scale(1.08); }
+[data-motion="on"] .fork path { stroke-dasharray: 30; animation: fork-draw 3.2s ease-in-out infinite; }
+[data-motion="on"] .fork circle:nth-of-type(3) { animation: fork-node 3.2s ease-in-out infinite; transform-origin: 12px 19.5px; }
+@keyframes fork-draw { 0% { stroke-dashoffset: 30; } 45%, 75% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -30; } }
+@keyframes fork-node { 0%, 40% { transform: scale(1); } 55% { transform: scale(1.35); } 70%, 100% { transform: scale(1); } }
