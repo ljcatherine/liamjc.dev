@@ -1,0 +1,12 @@
+{
+  "name": "liamjc-dev",
+  "compatibility_date": "2026-10-30",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "liamjc.dev", "custom_domain": true }],
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

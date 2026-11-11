@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" data-motion="on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Liam · liamjc.dev</title>
+  <meta name="description" content="Liam, a TAFE student studying cybersecurity. Projects: Nexus, NexusAI, LocalLLM, ReskateMusic and more.">
+  <meta name="theme-color" content="#121212">
+  <meta property="og:title" content="Liam · liamjc.dev">
+  <meta property="og:description" content="I build my own tools, from a PS5 that runs language models to a Rust IDE that manages my servers.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/motion.js"></script>
+  <script src="/js/main.js" defer></script>
+</head>
+<body>
+  <div class="grid" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="mark" href="#top">liam<span>.</span></a>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a class="gh" href="https://github.com/ljcatherine" rel="me noopener">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="name">
+      <div class="crosshair" aria-hidden="true"><span class="cx"></span><span class="cy"></span><output class="coord"></output></div>
+      <p class="tags-row"><span>Victoria, Australia</span><span>Student</span><span>Learning cybersecurity</span></p>
+      <h1 id="name" aria-label="Liam"><span>L</span><span>i</span><span>a</span><span>m</span></h1>
+      <p class="lede">I build my own tools, from a PS5 that runs language models to a Rust IDE that manages my servers. TAFE student, studying cybersecurity.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/ljcatherine" rel="me noopener">See my GitHub</a>
+        <a class="btn" href="#projects">Browse projects</a>
+      </div>
+    </section>
+
+    <section id="about" class="about reveal" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <div class="about-text">
+        <p>I'm studying a Certificate IV in Cyber Security at TAFE. Most of what I build starts because I want a tool that doesn't exist yet, so my projects cover systems programming, apps and the web.</p>
+        <p>Lately that means running AI models on my own hardware, locally and in the cloud, and building the software around them.</p>
+      </div>
+      <dl class="skills">
+        <div><dt>Comfortable with</dt><dd>C++ · C# · Rust · Python · TypeScript · JavaScript · React · HTML · CSS</dd></div>
+        <div><dt>Learning</dt><dd>Java · Kotlin · C</dd></div>
+        <div><dt>Exploring</dt><dd>Cybersecurity · Reverse engineering · AI and ML · Local and cloud model deployment</dd></div>
+      </dl>
+    </section>
+
+    <section id="projects" class="projects" aria-labelledby="projects-h">
+      <div class="section-head reveal">
+        <h2 id="projects-h">Projects</h2>
+        <p>Public repos link to GitHub. Private projects are described here.</p>
+      </div>
+
+      <article class="card featured reveal">
+        <div class="card-head">
+          <h3>Nexus</h3>
+          <div class="badges"><span class="badge">Private project</span><a class="badge live" href="https://nexus.liamjc.dev">nexus.liamjc.dev ↗</a></div>
+        </div>
+        <p>An AI IDE and home-lab control room for my iPhone, Windows PC and NixOS machine, plus a web client. Every client shares one security policy: the Debian server is read-only, and AI agents can never write to it. The source code isn't public.</p>
+        <ol class="parts" aria-label="Nexus clients">
+          <li><b>iPhone</b><span>Swift · SSH, host metrics, AI chat</span></li>
+          <li><b>Desktop for Windows</b><span>Rust · egui IDE with Codex and Claude Code</span></li>
+          <li><b>Desktop for NixOS</b><span>Rust · the same IDE on Linux</span></li>
+          <li><b>Nexus Online</b><span>Astro · Cloudflare Workers and Access</span></li>
+        </ol>
+        <ul class="stack"><li>Rust</li><li>Swift</li><li>TypeScript</li><li>Cloudflare</li><li>Security</li></ul>
+      </article>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-head"><h3>NexusAI</h3><span class="badge">Private</span></div>
+          <p>Runs language models on a PS5 and serves them to my other devices through an OpenAI-compatible API, with its own dashboard on the console and a browser chat client.</p>
+          <ul class="stack"><li>Local LLMs</li><li>Node.js</li><li>Self-hosting</li></ul>
+        </article>
+        <article class="card reveal">
+          <div class="card-head"><h3>LocalLLM</h3><a class="badge link" href="https://github.com/ljcatherine/LocalLLM" rel="noopener">GitHub ↗</a></div>
+          <p>A local-first desktop chat client for Ollama, made for NixOS. It streams replies and reasoning, and shows token speed and how much context is left.</p>
+          <ul class="stack"><li>JavaScript</li><li>Ollama</li><li>Nix</li></ul>
+        </article>
+        <article class="card reveal">
+          <div class="card-head"><h3>ReskateMusic</h3><a class="badge link" href="https://github.com/ljcatherine/ReskateMusic" rel="noopener">GitHub ↗</a></div>
+          <p>Spotify controls inside the pause menu of the game skate., with a small translucent now-playing card. An experimental mod.</p>
+          <ul class="stack"><li>C++</li><li>Game modding</li><li>Spotify API</li></ul>
+        </article>
+        <article class="card reveal">
+          <div class="card-head"><h3>PS5 Server Panel</h3><span class="badge">Private</span></div>
+          <p>A control room for the Minecraft servers running on my PS5: live status, backups and server commands, reachable securely from outside my home network.</p>
+          <ul class="stack"><li>React</li><li>TypeScript</li><li>FastAPI</li></ul>
+        </article>
+        <article class="card reveal">
+          <div class="card-head"><h3>liamjc.dev</h3><a class="badge link" href="https://github.com/ljcatherine/liamjc.dev" rel="noopener">GitHub ↗</a></div>
+          <p>This site. Plain HTML, CSS and JavaScript with no build step, served as static assets by Cloudflare Workers with a strict content security policy.</p>
+          <ul class="stack"><li>HTML</li><li>CSS</li><li>Cloudflare</li></ul>
+        </article>
+      </div>
+
+      <div class="minor reveal">
+        <h3>Smaller builds</h3>
+        <ul>
+          <li><b>Advancement Guide</b><span>Fabric client mod that adds a Minecraft advancement guide to the pause menu.</span></li>
+          <li><b>AFK Players</b><span>Spigot plugin that keeps AFK farms running without a connected client.</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p class="reveal">Want to see more? Most of it is on GitHub.</p>
+    <a class="btn primary" href="https://github.com/ljcatherine" rel="me noopener">github.com/ljcatherine</a>
+    <div class="foot-row">
+      <small>Liam · Hosted on Cloudflare</small>
+      <button type="button" class="motion-toggle" id="motion-toggle">Animations: on</button>
+    </div>
+  </footer>
+</body>
+</html>
