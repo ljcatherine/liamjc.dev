@@ -168,6 +168,9 @@ a.badge:hover { border-color: var(--accent); }
 .parts { list-style: none; margin: 6px 0 4px; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
 .parts li { background: var(--panel); padding: 14px 16px; display: grid; gap: 4px; }
 .parts b { font: 700 15px var(--display); }
+.parts a, .minor a { color: var(--text); text-decoration: none; }
+.parts a:hover b, .minor a:hover b { color: var(--accent); }
+.minor li > a { display: block; }
 .parts span { font-size: 13.5px; color: var(--muted); }
 
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }

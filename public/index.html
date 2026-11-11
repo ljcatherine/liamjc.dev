@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Liam · liamjc.dev</title>
-  <meta name="description" content="Liam, a TAFE student studying cybersecurity. Projects: Nexus, NexusAI, LocalLLM, ReskateMusic and more.">
+  <meta name="description" content="Liam, a TAFE student studying cybersecurity. Projects: Nexus (open source), NexusNix, NexusAI and more.">
   <meta name="theme-color" content="#121212">
   <meta property="og:title" content="Liam · liamjc.dev">
   <meta property="og:description" content="I build my own tools, from a PS5 that runs language models to a Rust IDE that manages my servers.">
@@ -56,20 +56,25 @@
     <section id="projects" class="projects" aria-labelledby="projects-h">
       <div class="section-head reveal">
         <h2 id="projects-h">Projects</h2>
-        <p>Public repos link to GitHub. Private projects are described here.</p>
+        <p>Most of these are open source. Nexus and its apps come with full setup docs.</p>
       </div>
 
       <article class="card featured reveal">
         <div class="card-head">
           <h3>Nexus</h3>
-          <div class="badges"><span class="badge">Private project</span><a class="badge live" href="https://nexus.liamjc.dev">nexus.liamjc.dev ↗</a></div>
+          <div class="badges">
+            <span class="badge">Open source</span>
+            <a class="badge link" href="https://github.com/ljcatherine/Nexus" rel="noopener">GitHub ↗</a>
+            <a class="badge link" href="https://nexus.liamjc.dev/docs/">Docs ↗</a>
+            <a class="badge live" href="https://nexus.liamjc.dev">nexus.liamjc.dev ↗</a>
+          </div>
         </div>
-        <p>An AI IDE and home-lab control room for my iPhone (NexusiOS), Windows PC and NixOS machine (NexusNix), plus a web client. Every client shares one security policy: the Debian server is read-only, and AI agents can never write to it. It's private for now; I'm planning to release it as a reproducible system with extensive documentation.</p>
-        <ol class="parts" aria-label="Nexus clients">
-          <li><b>NexusiOS</b><span>Swift · iPhone app with SSH, host metrics and AI chat</span></li>
-          <li><b>Desktop for Windows</b><span>Rust · egui IDE with Codex and Claude Code</span></li>
-          <li><b>NexusNix</b><span>Rust · Nexus Desktop for NixOS, in progress</span></li>
-          <li><b>Nexus Online</b><span>Astro · Cloudflare Workers and Access</span></li>
+        <p>An AI IDE and home-lab control room for my iPhone, Windows PC and NixOS machine, plus a web client. Every client shares one security policy: the Debian server is read-only, and AI agents can never write to it. It's open source, with guides for building the whole system yourself.</p>
+        <ol class="parts" aria-label="Nexus apps">
+          <li><a href="https://github.com/ljcatherine/NexusiOS" rel="noopener"><b>NexusiOS ↗</b></a><span>Swift · iPhone app with SSH, host metrics and AI chat</span></li>
+          <li><a href="https://github.com/ljcatherine/NexusWindows" rel="noopener"><b>NexusWindows ↗</b></a><span>Rust · egui IDE with Codex and Claude Code</span></li>
+          <li><a href="https://github.com/ljcatherine/NexusNix" rel="noopener"><b>NexusNix ↗</b></a><span>Rust · the same app for NixOS, in progress</span></li>
+          <li><a href="https://github.com/ljcatherine/NexusOnline" rel="noopener"><b>NexusOnline ↗</b></a><span>Astro · Cloudflare Workers and Access</span></li>
         </ol>
         <ul class="stack"><li>Rust</li><li>Swift</li><li>TypeScript</li><li>Cloudflare</li><li>Security</li></ul>
       </article>
@@ -81,24 +86,9 @@
           <ul class="stack"><li>Rust</li><li>NixOS</li><li>Linux</li></ul>
         </article>
         <article class="card reveal">
-          <div class="card-head"><h3>NexusAI</h3><span class="badge">Private</span></div>
+          <div class="card-head"><h3>NexusAI</h3><a class="badge link" href="https://nexus.liamjc.dev/docs/backend/nexusai/">Docs ↗</a></div>
           <p>Runs language models on a PS5 and serves them to my other devices through an OpenAI-compatible API, with its own dashboard on the console and a browser chat client.</p>
           <ul class="stack"><li>Local LLMs</li><li>Node.js</li><li>Self-hosting</li></ul>
-        </article>
-        <article class="card reveal">
-          <div class="card-head"><h3>LocalLLM</h3><a class="badge link" href="https://github.com/ljcatherine/LocalLLM" rel="noopener">GitHub ↗</a></div>
-          <p>A local-first desktop chat client for Ollama, made for NixOS. It streams replies and reasoning, and shows token speed and how much context is left.</p>
-          <ul class="stack"><li>JavaScript</li><li>Ollama</li><li>Nix</li></ul>
-        </article>
-        <article class="card reveal">
-          <div class="card-head"><h3>ReskateMusic</h3><a class="badge link" href="https://github.com/ljcatherine/ReskateMusic" rel="noopener">GitHub ↗</a></div>
-          <p>Spotify controls inside the pause menu of the game skate., with a small translucent now-playing card. An experimental mod.</p>
-          <ul class="stack"><li>C++</li><li>Game modding</li><li>Spotify API</li></ul>
-        </article>
-        <article class="card reveal">
-          <div class="card-head"><h3>PS5 Server Panel</h3><span class="badge">Private</span></div>
-          <p>A control room for the Minecraft servers running on my PS5: live status, backups and server commands, reachable securely from outside my home network.</p>
-          <ul class="stack"><li>React</li><li>TypeScript</li><li>FastAPI</li></ul>
         </article>
         <article class="card reveal">
           <div class="card-head"><h3>liamjc.dev</h3><a class="badge link" href="https://github.com/ljcatherine/liamjc.dev" rel="noopener">GitHub ↗</a></div>
@@ -110,6 +100,9 @@
       <div class="minor reveal">
         <h3>Smaller builds</h3>
         <ul>
+          <li><a href="https://github.com/ljcatherine/LocalLLM" rel="noopener"><b>LocalLLM ↗</b></a><span>Local-first desktop chat client for Ollama on NixOS, with streamed reasoning, token speed and context use.</span></li>
+          <li><a href="https://github.com/ljcatherine/ReskateMusic" rel="noopener"><b>ReskateMusic ↗</b></a><span>Spotify controls in the pause menu of the game skate., with a translucent now-playing card.</span></li>
+          <li><b>PS5 Server Panel</b><span>Control room for the Minecraft servers on my PS5: status, backups and server commands.</span></li>
           <li><b>Advancement Guide</b><span>Fabric client mod that adds a Minecraft advancement guide to the pause menu.</span></li>
           <li><b>AFK Players</b><span>Spigot plugin that keeps AFK farms running without a connected client.</span></li>
         </ul>
