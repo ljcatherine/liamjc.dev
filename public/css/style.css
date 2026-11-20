@@ -227,6 +227,9 @@ a.badge:hover { border-color: var(--accent); }
 /* fork link in the corner of a project card */
 .has-fork { position: relative; }
 .has-fork .card-head { padding-right: 40px; }
+/* Fork badge inside a .parts cell (NexusAI in the Nexus tile). */
+.parts li.has-fork { position: relative; padding-right: 50px; }
+.fork.mini { top: 12px; right: 12px; width: 28px; height: 28px; border-radius: 8px; }
 .fork { position: absolute; top: 18px; right: 18px; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; border: 1px solid var(--line-hi); color: var(--muted); background: var(--bg); transition: color .25s, border-color .25s, transform .35s cubic-bezier(.2,.8,.2,1); }
 .fork svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; overflow: visible; }
 .fork circle { fill: var(--bg); }
